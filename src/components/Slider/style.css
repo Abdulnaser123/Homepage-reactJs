@@ -1,0 +1,98 @@
+.SlidesContainer {
+  color: white;
+  position: relative;
+  background-size: 100%;
+  background: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  height: 600px;
+  background-image: url("./images/SlideImage1.png");
+  background-size: cover;
+}
+.MyButton {
+  color: white;
+  width: 0;
+  height: 40px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  transition-duration: 0.5s;
+  transform-style: flat;
+  transition-property: width;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+}
+.MyButton:hover {
+  cursor: pointer;
+  background-color: #33333a;
+  width: 100px;
+}
+.content {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MySpan {
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 80px;
+}
+.LeftArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 50px;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 0%;
+  border-radius: 0px 50px 50px 0px;
+  background-color: black;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+  opacity: 0.5;
+}
+.arrowHover:hover {
+  background-color: gray;
+
+  cursor: pointer;
+}
+.RightArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 50px;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  border-radius: 50px 0 0 50px;
+  background-color: black;
+  opacity: 0.4;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+.arrow {
+  border: 1px solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.right {
+  transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+}

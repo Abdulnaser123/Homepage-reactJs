@@ -1,0 +1,17 @@
+.exploreBtn{
+    cursor:pointer;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33333A;
+    width: 174px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.exploreBtn:hover{
+    cursor:pointer;
+    background-color: tomato    ;
+}

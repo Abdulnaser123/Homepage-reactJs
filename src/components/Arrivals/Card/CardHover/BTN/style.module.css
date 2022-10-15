@@ -1,0 +1,25 @@
+.MyBTN {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  
+  background-color: #33333a;
+  width: 140px;
+  transition-duration: 0.4s;
+  transition-property: width;
+  height: 40px;
+  margin-top: 40px;
+}
+
+.MyBTN:hover {
+  cursor: pointer;
+
+  width: 180px;
+  background-color: tomato;
+}

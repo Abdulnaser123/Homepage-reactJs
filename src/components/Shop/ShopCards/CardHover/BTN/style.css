@@ -1,0 +1,21 @@
+.MyBTN2 {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #33333a;
+  transition-duration: 1s;
+  transition-property: background-color, outline;
+}
+
+.MyBTN2:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  outline: 2px solid;
+}
