@@ -1,11 +1,16 @@
 import styles from "./style.module.css"
 
-const BTN = ()=>{
-    return(
+const BTN = () => {
+
+
+    return (
         <>
-            <div className={styles.MyBTN}>QUICK VIEW</div>
+            <div className={styles.MyBTN}  >QUICK VIEW</div>
         </>
     );
 };
 
-export default BTN; 
+
+
+export default BTN;
+

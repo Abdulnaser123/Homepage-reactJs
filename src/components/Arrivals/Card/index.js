@@ -1,17 +1,27 @@
-import "./styles.css"
-import NewTitle from "./NewTitle";
-import CardHover from "./CardHover";
-const Card = ()=>{
-    return (
-        <div className="MyCard">
-            <CardHover/>
-            <NewTitle/>
-            <img className="MyImage2" src="./images/a18e6a7585aba0a670d755708b53fb0d50be1417.png" alt="new clothes"/>
-            <div className="Description">
-                <p className="MyP">Pueraria Mirifica And Study Phyto Estrogens</p>
-                <span className=".MySpan2">$599.00</span>        
-            </div>
-        </div>
-    );
-};
-export default Card;
+import './styles.css'
+import NewTitle from './NewTitle'
+import CardHover from './CardHover'
+import React, {useState} from 'react'
+import Popup from '../../../components/popup/index.js'
+
+const Card = (props) => {
+ //  console.log(props.item.thumbnail)
+ const [state, setState] = useState(false)
+
+ return (
+  <>
+   {' '}
+   <div className="MyCard" onClick={() => setState(!state)}>
+    <CardHover />
+    <NewTitle />
+    <img className="MyImage2" src={props.item.thumbnail} alt="new clothes" />
+    <div className="Description">
+     <p className="MyP">Pueraria Mirifica And Study Phyto Estrogens</p>
+     <span className=".MySpan2">$599.00</span>
+    </div>
+   </div>
+   {state && <Popup specification={props} />}
+  </>
+ )
+}
+export default Card
