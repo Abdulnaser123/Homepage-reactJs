@@ -1,0 +1,7 @@
+.productsActive {
+  display: block;
+}
+
+.productsInActive {
+  display: none;
+}
