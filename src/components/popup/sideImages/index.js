@@ -1,9 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import styles from './index.module.css';
 import {BsQuestionSquare} from 'react-icons/bs';
 import {AiFillStar} from 'react-icons/ai';
+import {Context} from '../../cartContext';
 
 let SideImage = ({item}) => {
+  const [state, setState] = useState(false);
+
+  const [cart, handleClick] = useContext(Context);
+  console.log(cart);
   // console.log(item);
   const [quantity, setQuantity] = useState(1);
   //  console.log(
@@ -88,7 +93,12 @@ let SideImage = ({item}) => {
                   +
                 </span>
               </div>
-              <div className={styles.addToCart}>Add to cart</div>
+              <div
+                className={styles.addToCart}
+                onClick={() => handleClick(item)}
+              >
+                Add to cart
+              </div>
               <div className={styles.questionMark}>
                 <BsQuestionSquare size={20} />
                 <div className={styles.addToWish}>Add to wishlist</div>

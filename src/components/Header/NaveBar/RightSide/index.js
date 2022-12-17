@@ -7,10 +7,11 @@ import React, {useContext} from 'react';
 
 // -----
 import {Context} from '../../../cartContext';
-const RightSide = () => {
-  const value = useContext(Context);
-  console.log('value is +++++', value);
+import {useState} from 'react';
 
+const RightSide = () => {
+  const [cart1, setCart] = useState([]);
+  const [cart, handleClick] = useContext(Context);
   return (
     <div className="RightSide">
       <div className="LogIn">
@@ -28,13 +29,14 @@ const RightSide = () => {
         <img className="MyImg" src={favoriteImage} alt="favorite" />
       </a>
       <a
+        onClick={() => setCart(cart)}
         className="cart"
         href="#h"
         data-bs-toggle="modal"
         data-bs-target="#videoModal"
       >
         <img className="MyImg" src={shopImage} alt="shop" />
-        <span className="counter">1</span>
+        <span className="counter">{cart1.length}</span>
       </a>
       <div
         class="modal fade"
@@ -56,7 +58,11 @@ const RightSide = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">{value}</div>
+            <div class="modal-body">
+              {cart.map((item) => (
+                <div>{item.brand}</div>
+              ))}
+            </div>
             <div class="modal-footer">
               <button
                 type="button"

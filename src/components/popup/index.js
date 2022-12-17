@@ -5,7 +5,7 @@ import SlideImages from './sideImages/index.js';
 
 let Container = ({specification}) => {
   const [close, setClose] = useState(true);
-  console.log(specification);
+  // console.log(specification);
 
   return (
     close && (

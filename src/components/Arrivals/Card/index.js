@@ -3,12 +3,14 @@ import NewTitle from './NewTitle';
 import CardHover from './CardHover';
 import React from 'react';
 import Popup from '../../../components/popup/index.js';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
+import {Context} from '../../cartContext';
 
 const Card = ({item}) => {
   // console.log(item);
   const [state, setState] = useState(false);
-
+  // console.log('cart is +++++123124', cart);
+  // console.log(handleClick);
   return (
     <>
       {' '}
@@ -26,7 +28,7 @@ const Card = ({item}) => {
           <span className=".MySpan2">$ {item.price}</span>
         </div>
       </div>
-      {state && <Popup specification={item} />}
+      {state && <Popup specification={item} />}{' '}
     </>
   );
 };
