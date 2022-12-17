@@ -50,7 +50,7 @@ function Login() {
                 onChange={handleChanges}
               />
               <label className="form-label" for="email">
-                Email address
+                Email address(gaza@gmail.com)
               </label>
             </div>
 
@@ -64,7 +64,7 @@ function Login() {
                 onChange={handleChanges}
               />
               <label className="form-label" for="password">
-                Password
+                Password(123456)
               </label>
             </div>
 
