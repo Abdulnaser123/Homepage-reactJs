@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Card from '../../../Arrivals/Card/index';
-import productsSpecifications from '../../../products';
 import styles from './right.module.css';
 import axios from 'axios';
 

@@ -16,7 +16,7 @@ let SideImage = ({item}) => {
           {item.images &&
             item.images.map((img) => (
               <div onMouseMove={() => setMainImage(img)}>
-                <img src={img} alt="" />
+                <img src={img} alt="alternative" />
               </div>
             ))}
         </div>

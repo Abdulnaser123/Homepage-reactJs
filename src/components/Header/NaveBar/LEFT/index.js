@@ -2,7 +2,7 @@ import {FaAngleDown} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import './style.css';
 
-const ListItemsText = ['shop', 'Apperals', 'journal', 'about'];
+const ListItemsText = ['shop', 'Apparels', 'journal', 'about'];
 
 const leftSide = () => {
   return (
@@ -12,10 +12,26 @@ const leftSide = () => {
         {ListItemsText.map((item) => {
           return (
             <div className="myLi">
-              {item === 'Apperals' && <Link to={'/Apperals'}>{item}</Link>}{' '}
-              {item === 'shop' && <Link to={'/'}>{item}</Link>}{' '}
-              {item === 'journal' && <Link to={'/journal'}>{item}</Link>}{' '}
-              {item === 'about' && <Link to={'/about'}>{item}</Link>}{' '}
+              {item === 'Apparels' && (
+                <Link to={'/Apparels'}>
+                  <a href="#_">{item}</a>
+                </Link>
+              )}{' '}
+              {item === 'shop' && (
+                <Link to={'/'}>
+                  <a href="#_">{item}</a>
+                </Link>
+              )}{' '}
+              {item === 'journal' && (
+                <Link to={'/journal'}>
+                  <a href="#_">{item}</a>
+                </Link>
+              )}{' '}
+              {item === 'about' && (
+                <Link to={'/about'}>
+                  <a href="#_">{item}</a>
+                </Link>
+              )}{' '}
               <div className="down">
                 <FaAngleDown />
               </div>

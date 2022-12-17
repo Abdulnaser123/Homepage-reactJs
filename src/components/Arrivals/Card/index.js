@@ -1,8 +1,9 @@
 import './styles.css';
 import NewTitle from './NewTitle';
 import CardHover from './CardHover';
-import React, {useState} from 'react';
+import React from 'react';
 import Popup from '../../../components/popup/index.js';
+import {useState} from 'react';
 
 const Card = ({item}) => {
   // console.log(item);
@@ -11,6 +12,7 @@ const Card = ({item}) => {
   return (
     <>
       {' '}
+      {/* <div onClick={() => handleClick(item)}> */}
       <div className="MyCard" onClick={() => setState(!state)}>
         <CardHover />
         <NewTitle />

@@ -24,7 +24,7 @@ function Category({categoryName, products}) {
                 {item.title}
               </div>
             );
-          }
+          } else return <></>;
         })}
       </div>
     </>

@@ -6,10 +6,10 @@ const NewArrival = () => {
   //   console.log(productsSpecifications);
   return (
     <div className={styles.MainContainer}>
-      <h1 className={styles.MyH1}>Featured</h1>
+      <h1 className={styles.MyH1}>Featured </h1>
       <div className={styles.MyContainer}>
         {productsSpecifications.map((item) => {
-          return <Card item={item} />;
+          return <Card item={item} key={item.id} />;
         })}
       </div>
     </div>

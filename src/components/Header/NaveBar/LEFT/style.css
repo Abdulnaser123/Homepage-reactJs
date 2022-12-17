@@ -1,4 +1,3 @@
-
 .myLi {
   display: flex;
   justify-content: center;
@@ -6,6 +5,14 @@
   margin-left: 40px;
   cursor: pointer;
 }
+.myLi a {
+  text-decoration: none;
+  color: black;
+}
+.myLi a:active {
+  color: tomato;
+}
+
 .MyA {
   display: flex;
   justify-content: center;
